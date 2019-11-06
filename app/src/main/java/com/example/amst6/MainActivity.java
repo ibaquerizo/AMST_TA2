@@ -22,11 +22,22 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-      FloatingActionButton fab = findViewById(R.id.fab1);
-        fab.setOnClickListener(new View.OnClickListener() {
+        final FloatingActionButton fab3 = (FloatingActionButton) findViewById(R.id.fab3);
+        fab3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Maps.class);
+                startActivity(intent);
+            }
+        });
+
+
+      final FloatingActionButton fab1 = findViewById(R.id.fab1);
+        fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, youtube.class);
+                startActivity(intent);
             }
         });
     }
