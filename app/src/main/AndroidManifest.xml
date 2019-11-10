@@ -48,6 +48,14 @@
         <!-- Se agrega la clase CalendarActvity en el manifest para declarar la secuecnia de ejcucion del codigo-->
         <activity android:name=".CalendarActivity"></activity>
         <!-- Se agrego la clase CalendarActvity en el manifest -->
+
+        <!-- Se agrega la clase linearchart en el manifest para declarar la secuecnia de ejcucion del codigo-->
+        <activity android:name=".linearChart"></activity>
+        <!-- Se agrego la clase linearchart en el manifest -->
+
+        <!-- Se agrega la clase youtube en el manifest para declarar la secuecnia de ejcucion del codigo-->
+        <activity android:name=".youtube"></activity>
+        <!-- Se agrego la clase youtube en el manifest -->
     </application>
 
 </manifest>
