@@ -19,11 +19,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final FloatingActionButton fab3 = (FloatingActionButton) findViewById(R.id.fab3);
-        fab3.setOnClickListener(new View.OnClickListener() {
+        final FloatingActionButton map_btn = (FloatingActionButton) findViewById(R.id.map_btn);
+        map_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Maps.class);
@@ -32,15 +33,35 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-      final FloatingActionButton fab1 = findViewById(R.id.fab1);
-        fab1.setOnClickListener(new View.OnClickListener() {
+      final FloatingActionButton YT_btn = findViewById(R.id.YT_btn);
+        YT_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, youtube.class);
                 startActivity(intent);
             }
         });
-    }
+
+        final FloatingActionButton btngocalendar = findViewById(R.id.btngocalendar);
+        btngocalendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        final FloatingActionButton linearChart_btn = findViewById(R.id.linearChart_btnID);
+        linearChart_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this, linearChart.class);
+                startActivity(intent);
+            }
+        });
+
+        }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -45,6 +45,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Se agrega la clase CalendarActvity en el manifest para declarar la secuecnia de ejcucion del codigo-->
+        <activity android:name=".CalendarActivity"></activity>
+        <!-- Se agrego la clase CalendarActvity en el manifest -->
     </application>
 
 </manifest>
