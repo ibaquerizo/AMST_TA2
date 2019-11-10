@@ -1,7 +1,10 @@
 package com.example.amst6;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,16 +35,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+////////////////////////////////
       final FloatingActionButton YT_btn = findViewById(R.id.YT_btn);
-        YT_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, youtube.class);
-                startActivity(intent);
-            }
-        });
 
+         YT_btn.setOnClickListener(new View.OnClickListener(){
+
+
+             @Override
+             public void onClick(View v) {
+                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=8Lq3HyBCuAA&feature=emb_title")));
+                 Log.i("Video", "Video Playing....");
+             }
+         });
+///////////////////////////////////
         final FloatingActionButton btngocalendar = findViewById(R.id.btngocalendar);
         btngocalendar.setOnClickListener(new View.OnClickListener() {
             @Override
